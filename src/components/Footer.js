@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import SocailImage from './SocialImage';
+import SocialImage from './SocialImage';
 import BrandLogo from './BrandLogo';
 import '../css/Footer.css';
 

@@ -9,3 +9,5 @@ class BrandLogo extends Component{
         )
     }
 }
+
+export default BrandLogo;

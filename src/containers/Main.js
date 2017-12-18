@@ -16,4 +16,4 @@ class Main extends Component{
     }
 }
 
-export default Booklist;
+export default Main;
