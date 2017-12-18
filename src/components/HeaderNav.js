@@ -15,11 +15,11 @@ class HeaderNav extends Component {
           <SocialImage href="http://facebook.com/webflow"
                        aCSS="social-btn" 
                        src="http://uploads.webflow.com/5a2a159ab8745a00019f5581/5a2a159bb8745a00019f5592_facebook-icon_black.svg"
-                       imgClass="social-img"/>
+                       imgCSS="social-img"/>
           <SocialImage href="http://twitter.com/webflowapp"
                        aCSS="social-btn" 
                        src="http://uploads.webflow.com/5a2a159ab8745a00019f5581/5a2a159bb8745a00019f5590_twitter-icon_black.svg"
-                       imgClass="social-img"/>
+                       imgCSS="social-img"/>
         </div>
       </div>
     );
