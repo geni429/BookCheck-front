@@ -3,4 +3,4 @@ import ReactDOM from 'react-dom';
 import { BookList, Main } from './containers';
 import './index.css';
 
-ReactDOM.render(<BookList />, document.getElementById('root'));
+ReactDOM.render(<Main />, document.getElementById('root'));
