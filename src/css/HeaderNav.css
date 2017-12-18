@@ -29,18 +29,21 @@
     vertical-align: middle;
 }
 
-.social-btn {
+.header-social-btn {
     display: table-cell;
     vertical-align: middle;
     margin-left: 17px;
     padding-right: 2px;
     padding-left: 2px;
+}
+
+.social-animation{
     opacity: 0.15;
     -webkit-transition: opacity 250ms ease;
     transition: opacity 250ms ease;
 }
 
-.social-btn:hover {
+.social-animation:hover {
     opacity: 0.8;
 }
 
