@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './HeaderNav.css'
+import '../css/HeaderNav.css'
 
 class HeaderNav extends Component {
   render() {
