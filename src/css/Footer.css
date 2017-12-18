@@ -1,0 +1,31 @@
+#footer-wrapper {
+    width: 100%;
+    background-color: hsla(26, 13%, 57%, .42);
+    padding-top: 81px;
+    padding-bottom: 81px;
+}
+
+#footer-logo-wrapper {
+    margin: 0 auto;
+    width: 34px;
+}
+
+#footer-logo {
+    margin-bottom: 21px;
+    width: 34px;
+}
+
+#footer-social-wrapper {
+    display: table;
+    margin: 0 auto;
+}
+
+.footer-social-btn {
+    margin-left: 9px;
+    margin-right: 9px;
+    display: inline-block;
+}
+
+.footer-social-img {
+    width: 17px;
+}
