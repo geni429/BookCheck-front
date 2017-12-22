@@ -6,10 +6,10 @@ import '../css/HeaderNav.css'
 class HeaderNav extends Component {
   render() {
     return (
-      <div id="header-wrapper">
+      <div className="header-wrapper" id="header-wrapper">
         <div id="brand-wrapper">
           <BrandLogo id="brand-logo"/>
-          <span id="brand-name">BookCheck</span>
+          <span className="brand-name" id="brand-name">BookCheck</span>
         </div>
         <div id="social-btn-wrapper">
           <SocialImage href="http://facebook.com/webflow"
