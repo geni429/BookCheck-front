@@ -1,3 +1,29 @@
+@media only screen and (min-width: 768px) {
+  #search-box {
+    width: 50%;
+    height: 54px;
+    padding: 30px 60px 30px 60px;
+  }
+
+  .search-box-text{
+    font-size: 18px;
+    font-weight: 300;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #search-box {
+    width: 70%;
+    height: 30px;
+    padding: 10px 30px 10px 30px;
+  }
+
+  .search-box-text{
+    font-size: 13px;
+    font-weight: 300;
+  }
+}
+
 #search-wrapper {
   width: 100%;
   background-color: #fa9260;
@@ -5,42 +31,34 @@
   padding-bottom: 92px
 }
 
-#search-wrapper #search-box {
-  width: 50%;
+.search-box {
   margin: auto;
   border-radius: 30px;
   background-color: white;
-  height: 54px;
-  padding: 30px 60px 30px 60px;
 }
 
-#search-wrapper #search-box-input {
-  width: 69%;
+#search-box-input {
+  width: 70%;
   float: left;
   border: 0;
   height: 96%;
-  font-size: 18px;
-  font-weight: 300;
-  padding-left: 5px;
 }
 
-#search-wrapper #search-box-input:focus {
+#search-box-input:focus {
   outline: 2px solid #806732;
 }
 
-#search-wrapper #search-box-btn {
+#search-box-btn {
   background-color: #a83d3d;
   width: 30%;
   border: 0;
   height: 100%;
-  font-size: 18px;
   color: white;
   cursor: pointer;
-  font-weight: 300;
   -webkit-transition: background-color 250ms ease;
   transition: background-color 250ms ease;
 }
 
-#search-wrapper #search-box-btn:hover{
+#search-box-btn:hover {
   background-color: #18c7aa;
 }
