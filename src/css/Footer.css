@@ -1,8 +1,20 @@
-#footer-wrapper {
+@media only screen and (min-width: 768px){
+    #footer-wrapper {
+        padding-top: 81px;
+        padding-bottom: 81px;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    #footer-wrapper {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+.footer-wrapper {
     width: 100%;
     background-color: hsla(26, 13%, 57%, .42);
-    padding-top: 81px;
-    padding-bottom: 81px;
 }
 
 #footer-logo-wrapper {

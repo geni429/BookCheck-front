@@ -1,22 +1,83 @@
-.section-wrapper{
+@media only screen and (min-width: 768px) {
+  #first-section {
+    padding-top: 81px;
+    padding-bottom: 81px;
+  }
+  #second-section {
+    padding-top: 81px;
+    padding-bottom: 81px;
+  }
+  #third-section {
+    padding-top: 58px;
+    padding-bottom: 58px;
+  }
+  #phone-image {
+    width: 381px;
+  }
+  #image-crop {
+    overflow: hidden;
+    height: 368px;
+    margin-top: 39px;
+    margin-bottom: -81px;
+  }
+  #section-text-p {
+    font-size: 23px;
+  }
+  #section-text-h2 {
+    font-size: 38px;
+  }
+  #infinite-image {
+    margin-top: 52px;
+    opacity: 0.15;
+    width: 187px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #first-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  #second-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  #third-section {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  #phone-image {
+    width: 190px;
+  }
+  #image-crop {
+    overflow: hidden;
+    height: 368px;
+    margin-top: 39px;
+    margin-bottom: -200px;
+  }
+  #section-text-p {
+    font-size: 15px;
+  }
+  #section-text-h2 {
+    font-size: 25px;
+  }
+  #infinite-image {
+    margin-top: 30px;
+    opacity: 0.15;
+    width: 130px;
+  }
+}
+
+.section-wrapper {
   width: 100%;
   text-align: center;
 }
 
-#first-section {
-  padding-top: 81px;
-  padding-bottom: 81px;
+.first-section {
   background-color: hsla(26, 13%, 57%, .42);
 }
 
-#second-section{
-  padding-top: 81px;
-  padding-bottom: 81px;
-}
-
-#third-section{
-  padding-top: 58px;
-  padding-bottom: 58px;
+.third-section {
   background-color: #fac960;
 }
 
@@ -25,7 +86,6 @@
   color: #fff;
   text-shadow: none;
   margin: 0px 0px 27px;
-  font-size: 38px;
   line-height: 36px;
   font-weight: 300;
   text-shadow: none;
@@ -37,26 +97,8 @@
   padding-right: 60px;
   padding-left: 60px;
   color: rgba(0, 0, 0, .4);
-  font-size: 23px;
   line-height: 30px;
   font-weight: 300;
   letter-spacing: 0px;
   text-shadow: none;
-}
-
-#image-crop{
-  overflow: hidden;
-  height: 368px;
-  margin-top: 39px;
-  margin-bottom: -81px;
-}
-
-#phone-image{
-  width: 381px;
-}
-
-#infinite-image{
-  margin-top: 52px;
-  opacity: 0.15;
-  width: 187px;
 }

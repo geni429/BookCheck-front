@@ -8,9 +8,9 @@ class SearchBook extends Component{
   render(){
     return (
       <div id="search-wrapper">
-        <div id="search-box">
-          <input id="search-box-input" type="text" placeholder="도서명 검색"/>
-          <input id="search-box-btn" type="submit" value="검색하기" onClick={this.search()}/>
+        <div className="search-box" id="search-box">
+          <input className="search-box-text" id="search-box-input" type="text" placeholder="도서명 검색"/>
+          <input className="search-box-text" id="search-box-btn" type="submit" value="검색하기" onClick={this.search()}/>
         </div>
       </div>
     )
