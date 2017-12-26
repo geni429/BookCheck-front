@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { HeaderNav, Footer, BookCard } from '../components';
+import { browserHistory } from 'react-router';
 import axios from 'axios';
 import '../css/BookList.css';
 
@@ -26,14 +27,15 @@ class BookList extends Component {
 
   componentDidMount() {
     let libraryID = 1234567890;
-    console.log(process.env.JWT_ACCESS_TOKEN);
+    let JWTtoken = 'JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTUxMzc3NTczMiwidHlwZSI6ImFjY2VzcyIsImV4cCI6MTUxNDAzNDkzMiwibmJmIjoxNTEzNzc1NzMyLCJqdGkiOiJhNGVjMzdmZS04NmI0LTRjOWYtYTJhYy0wNzZiYjFmYzU3MzIiLCJpZGVudGl0eSI6Im1za2FuZzExNiJ9.GVSkN31_PXZBqyZH0ACvuhTwqBK1IJh3YphK_7e6TbI';
 
     axios.get({
-      url: '/book?' + libraryID,
+      url: '/book?library_id=' + libraryID + '?keyword=' + this.props.params.search,
       headers: {
-        'Authorization': 'JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTUxMzc3NTczMiwidHlwZSI6ImFjY2VzcyIsImV4cCI6MTUxNDAzNDkzMiwibmJmIjoxNTEzNzc1NzMyLCJqdGkiOiJhNGVjMzdmZS04NmI0LTRjOWYtYTJhYy0wNzZiYjFmYzU3MzIiLCJpZGVudGl0eSI6Im1za2FuZzExNiJ9.GVSkN31_PXZBqyZH0ACvuhTwqBK1IJh3YphK_7e6TbI'
+        'Authorization': JWTtoken
       }
     }).then(res => {
+      console.log(res);
       this.setState({
         bookList: res.data
       });
@@ -45,10 +47,9 @@ class BookList extends Component {
   render() {
     return (
       <div id='booklist'>
-        <HeaderNav />
         <section>
           <article id='search-result-header'>
-            <div>[BookName] 검색결과</div>
+            <div>[ "{this.props.params.search}" ] 검색결과</div>
             <div>요청하신 도서의 검색 결과입니다.</div>
           </article>
           <ul id='search-result-wrapper'>
@@ -57,7 +58,6 @@ class BookList extends Component {
             })}
           </ul>
         </section>
-        <Footer />
       </div>
     );
   }

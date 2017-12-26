@@ -6,8 +6,8 @@ class MainSection extends Component{
   render(){
     return(
       <div>
-        <SearchBook/>
-        <ServiceIntro/>
+        <SearchBook inputSearchContent={this.props.inputSearchContent} search={this.props.search} />
+        <ServiceIntro />
       </div>
     )
   }
