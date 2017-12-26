@@ -15,7 +15,7 @@ class BookList extends Component {
 
   componentDidMount() {
     let libraryID = 1234567890;
-    let JWTtoken = 'JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTUxMzc3NTczMiwidHlwZSI6ImFjY2VzcyIsImV4cCI6MTUxNDAzNDkzMiwibmJmIjoxNTEzNzc1NzMyLCJqdGkiOiJhNGVjMzdmZS04NmI0LTRjOWYtYTJhYy0wNzZiYjFmYzU3MzIiLCJpZGVudGl0eSI6Im1za2FuZzExNiJ9.GVSkN31_PXZBqyZH0ACvuhTwqBK1IJh3YphK_7e6TbI';
+    let JWTtoken = 'JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZGVudGl0eSI6Im1za2FuZzExNiIsIm5iZiI6MTUxNDI3Njc3NSwiaWF0IjoxNTE0Mjc2Nzc1LCJqdGkiOiJiZmI1YmYxYy04MDg4LTQ0NTItYTRiMy0xNzZjZDY4YzQ5NGQiLCJ0eXBlIjoiYWNjZXNzIiwiZXhwIjoxNTE0NTM1OTc1LCJmcmVzaCI6ZmFsc2V9.oAToTZ9NSJ6CazrWmk6KIhHQdFnahm09-KXBXOYzLDQ'
     let url = '/book?library_id=' + libraryID + '?keyword=' + this.props.params.search;
 
     axios({
