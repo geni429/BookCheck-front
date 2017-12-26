@@ -16,9 +16,11 @@ class BookList extends Component {
   componentDidMount() {
     let libraryID = 1234567890;
     let JWTtoken = 'JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTUxMzc3NTczMiwidHlwZSI6ImFjY2VzcyIsImV4cCI6MTUxNDAzNDkzMiwibmJmIjoxNTEzNzc1NzMyLCJqdGkiOiJhNGVjMzdmZS04NmI0LTRjOWYtYTJhYy0wNzZiYjFmYzU3MzIiLCJpZGVudGl0eSI6Im1za2FuZzExNiJ9.GVSkN31_PXZBqyZH0ACvuhTwqBK1IJh3YphK_7e6TbI';
+    let url = '/book?library_id=' + libraryID + '?keyword=' + this.props.params.search;
 
-    axios.get({
-      url: '/book?library_id=' + libraryID + '?keyword=' + this.props.params.search,
+    axios({
+      method: 'GET',
+      url: url,
       headers: {
         'Authorization': JWTtoken
       }
