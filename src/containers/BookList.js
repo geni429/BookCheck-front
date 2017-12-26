@@ -25,20 +25,20 @@ class BookList extends Component {
   }
 
   componentDidMount() {
-    let libraryID = '';
+    let libraryID = 1234567890;
+    console.log(process.env.JWT_ACCESS_TOKEN);
 
-    axios({
-      method: 'GET',
-      url: 'http://172.31.12.119:3004/book?' + libraryID,
+    axios.get({
+      url: '/book?' + libraryID,
       headers: {
-        'Authorization': 'JWT ' + process.env.JWT_ACCESS_TOKEN
+        'Authorization': 'JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTUxMzc3NTczMiwidHlwZSI6ImFjY2VzcyIsImV4cCI6MTUxNDAzNDkzMiwibmJmIjoxNTEzNzc1NzMyLCJqdGkiOiJhNGVjMzdmZS04NmI0LTRjOWYtYTJhYy0wNzZiYjFmYzU3MzIiLCJpZGVudGl0eSI6Im1za2FuZzExNiJ9.GVSkN31_PXZBqyZH0ACvuhTwqBK1IJh3YphK_7e6TbI'
       }
     }).then(res => {
-      console.log(res);
-      console.log('hello');
+      this.setState({
+        bookList: res.data
+      });
     }).catch(err => {
       console.log(err);
-      console.log('hello');
     })
   }
 
