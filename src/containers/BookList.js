@@ -9,19 +9,7 @@ class BookList extends Component {
     super(props);
 
     this.state = {
-      bookList: [
-        {
-          "area": 1,
-          "author": "케네스 레이즈",
-          "borrowable": true,
-          "detail": "파이썬을 ‘파이썬답게’ 쓰려면 어떻게 해야 할까? 파이썬스러운 코드라는 게 도대체 어떤 의미일까? 내가 작성한 코드를 파이썬답다고 판단할 수 있는 기준은 무엇일까? 『파이썬을 여행하는 히치하이커를 위한 안내서』는 속 시원하게 답을 찾기 어려운 ‘파이썬다운 프로그램 작성법’을 명료하고 간결하게 정리한 가이드다. 여기에는 초보자는 물론 더 나은 코딩 기술을 고민하는 중급 이상의 파이썬 프로그래머에게 통찰을 주는 내용을 담았다. ",
-          "publication_date": "2017-10-31",
-          "rfid": "a1a1a1a1a1a1",
-          "summary": "거대한 파이썬 세상을 모험하는 프로그래머를 위한 안내서",
-          "title": "파이썬을 여행하는 히치하이커를 위한 안내서",
-          "img": "http://uploads.webflow.com/5a2a159ab8745a00019f5581/5a2a48b485c02500012ea5b5_download.png"
-        }
-      ]
+      bookList: []
     }
   }
 
