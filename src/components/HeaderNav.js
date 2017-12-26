@@ -7,7 +7,7 @@ class HeaderNav extends Component {
   render() {
     return (
       <div className="header-wrapper" id="header-wrapper">
-        <div id="brand-wrapper">
+        <div id="brand-wrapper" onClick={this.props.goMain}>
           <BrandLogo id="brand-logo"/>
           <span className="brand-name" id="brand-name">BookCheck</span>
         </div>

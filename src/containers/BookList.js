@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { HeaderNav, Footer, BookCard } from '../components';
+import { browserHistory } from 'react-router';
 import axios from 'axios';
 import '../css/BookList.css';
 
@@ -43,12 +44,12 @@ class BookList extends Component {
   }
 
   render() {
+    console.log(this.props.params);
     return (
       <div id='booklist'>
-        <HeaderNav />
         <section>
           <article id='search-result-header'>
-            <div>[BookName] 검색결과</div>
+            <div>[ "{this.props.params.search}" ] 검색결과</div>
             <div>요청하신 도서의 검색 결과입니다.</div>
           </article>
           <ul id='search-result-wrapper'>
@@ -57,7 +58,6 @@ class BookList extends Component {
             })}
           </ul>
         </section>
-        <Footer />
       </div>
     );
   }

@@ -40,6 +40,10 @@
     display: table;
 }
 
+#brand-wrapper:hover {
+    cursor: pointer;
+}
+
 #brand-logo {
     display: table-cell;
     width: 40px;
