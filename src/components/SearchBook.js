@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import '../css/SearchBook.css';
 
 class SearchBook extends Component{
+
   render(){
     return (
       <div id="search-wrapper">
