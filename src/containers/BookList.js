@@ -11,6 +11,8 @@ class BookList extends Component {
     this.state = {
       bookList: []
     }
+
+    this.BookDetail=this.BookDetail.bind(this)
   }
 
   componentDidMount() {
@@ -30,6 +32,10 @@ class BookList extends Component {
     })
   }
 
+  BookDetail(index) {
+    browserHistory.push('/book/detail/'+this.state.bookList[index]);
+  }
+
   render() {
     return (
       <div id='booklist'>
@@ -40,7 +46,7 @@ class BookList extends Component {
           </article>
           <ul id='search-result-wrapper'>
             {this.state.bookList.map((ele, index) => {
-              return <BookCard title={ele.title} author={ele.author} image={ele.img} key={index} />
+              return <BookCard title={ele.title} author={ele.author} image={ele.img} key={index} BookDetail={this.BookDetail}/>
             })}
           </ul>
         </section>

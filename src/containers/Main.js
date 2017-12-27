@@ -24,7 +24,7 @@ class Main extends Component{
 
   search() {
     let searchContent = this.state.searchContent;
-    browserHistory.push('/booklist/' + searchContent);
+    browserHistory.push('/book/list/' + searchContent);
   }
 
   render(){
