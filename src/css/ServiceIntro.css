@@ -51,9 +51,9 @@
   }
   #image-crop {
     overflow: hidden;
-    height: 368px;
+    height: 150px;
     margin-top: 39px;
-    margin-bottom: -200px;
+    margin-bottom: -40px;
   }
   #section-text-p {
     font-size: 15px;

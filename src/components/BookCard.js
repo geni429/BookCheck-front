@@ -1,6 +1,6 @@
 import React from 'react';
 
-const BookCard = ({ image, title, author }) => {
+const BookCard = ({ image, title, author, index }) => {
   return (
     <li className='bookcard'>
       <img className='book-image' alt={title} src={image}/>
