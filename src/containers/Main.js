@@ -1,6 +1,4 @@
 import React, {Component} from 'react';
-import HeaderNav from '../components/HeaderNav';
-import Footer from '../components/Footer';
 import MainSection from '../components/MainSection';
 import { browserHistory } from 'react-router';
 

@@ -12,8 +12,6 @@ class DefaultLayout extends Component {
   }
 
   render() {
-    console.log(this.state.test);
-    console.log(this.props.children);
     return (
       <div>
         <HeaderNav goMain={() => browserHistory.push('/')} />

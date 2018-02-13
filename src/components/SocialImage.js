@@ -6,7 +6,7 @@ class SocailImage extends Component{
   render(){
     return (
       <a href={this.props.href} className={this.props.aCSS}>
-        <img src={this.props.src} className={this.props.imgCSS}/>
+        <img src={this.props.src} className={this.props.imgCSS} alt="socail"/>
       </a>
     )
   }
