@@ -84,3 +84,7 @@
 #booklist footer {
   height: 200px;
 }
+
+#non-search-result{
+  text-align: center;
+}

@@ -17,7 +17,7 @@ class BookList extends Component {
   }
 
   componentDidMount() {
-    let libraryID = 123456789;
+    let libraryID = 'test';
     //let JWTtoken = 'JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZGVudGl0eSI6Im1za2FuZzExNiIsIm5iZiI6MTUxNDI3Njc3NSwiaWF0IjoxNTE0Mjc2Nzc1LCJqdGkiOiJiZmI1YmYxYy04MDg4LTQ0NTItYTRiMy0xNzZjZDY4YzQ5NGQiLCJ0eXBlIjoiYWNjZXNzIiwiZXhwIjoxNTE0NTM1OTc1LCJmcmVzaCI6ZmFsc2V9.oAToTZ9NSJ6CazrWmk6KIhHQdFnahm09-KXBXOYzLDQ'
     let url = 'http://52.79.134.200:3004/book?library_id=' + libraryID + '&keyword=' + this.props.params.search;
 
@@ -38,8 +38,8 @@ class BookList extends Component {
   }
 
   bookCardRender() {
-    if( this.state.bookList === '' ) {
-      alert('검색결과가 없습니다')
+    if( !!this.state.bookList ) {
+      return <p id="non-search-result" >검색결과가 없습니다</p>
     }else {
       return this.state.bookList.map((ele, index) => {
         return <BookCard title={ele.title} author={ele.author} image={ele.img} key={index} BookDetail={this.BookDetail}/>
